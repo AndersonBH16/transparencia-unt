@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100vh;
+}
+
+.encabezado {
+    background: linear-gradient(to right, rgba(18, 18, 128, 0.986) 35%,rgb(209, 198, 48));
+    border-bottom: 3px solid rgba(92, 92, 92, 0.669);
+    height: 100px ;
+    width: 100%; 
+    margin:auto;
+    text-align: left;
+    padding: 2em 0;
+}
+
+.title {
+    font-family: sans-serif;
+    color: rgba(255, 255, 255, 0.959);
+    margin-left: 60px;
+}
+
+.imagen {
+    width: 250px;
+    height: 130px;
+    margin: 50px auto;
+    display: block;
+}
