@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transparencia</title>
+    <link rel="shortcut icon" href="icons/favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="encabezado">
+        <h1 class="title">Subir Archivos / Portal de Transparencia</h1>
+    </nav>
+    <img class="imagen" src="/icons/logount.png" alt="Logo UNT">
+    <div class="container">
+        <div class="header-section">
+            <h1>Transparencia </h1>
+            <p>Aquí puedes subir los archivos para la pagina del <a href="https://www.transparencia.gob.pe/enlaces/pte_transparencia_enlaces.aspx?id_entidad=10402" target="_blank">Portal de Transparencia</a> de la UNT</p>
+            <p>Se aceptan solo archivos en formato PDF</p>
+        </div>
+        <form id="myForm" action="upload.php" method="POST" enctype="multipart/form-data">
+            <div id="drop-zone">
+                <div class="col">
+                    <div class="cloud-icon">
+                        <img src="icons/cloud.png" alt="cloud">
+                    </div>
+                    <span>Arrastra y suelta tus archivos</span>
+                    <span>O</span>
+                    <div class="container-input">
+						<label class="custom-file-upload">
+							<input type="file" class="title" name="files[]" id="drop-file" multiple style="display: none;"/>
+							<input type="file" class="title" name="files[]" id="select-files" multiple />
+							Seleccionar Archivo
+						</label>
+					</div>
+                </div>
+                <div class="col">
+                    <div class="drop-here">Suelta Aquí</div>
+                </div>
+            </div>
+        </form>
+        <ul id="file-list"></ul>
+		<button id="send-btn" type="submit" name="submit">Enviar</button>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
